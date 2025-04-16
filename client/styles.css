@@ -1,0 +1,640 @@
+/* ubuntu-300 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/ubuntu-v20-latin-300.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* ubuntu-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/ubuntu-v20-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* ubuntu-italic - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Ubuntu';
+    font-style: italic;
+    font-weight: 400;
+    src: url('../fonts/ubuntu-v20-latin-italic.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* ubuntu-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/ubuntu-v20-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* Base */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-weight: 400;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+}
+
+address {
+    font-style: normal;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1288px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Strip */
+.strip {
+    border: 1px solid #007469;
+    height: 112px;
+    background-color: #007469;
+    margin-left: -100vw;
+    margin-right: -100vw;
+    left: 50%;
+    right: 50%;
+}
+
+/* Accent */
+.accent {
+    font-weight: 700;
+}
+
+/* Header */
+.header {
+    padding: 32px 0;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.header__logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.header__subtext {
+    font-size: 16px;
+    font-weight: 700;
+    color: #007469;
+    margin-bottom: 0;
+}
+
+.header__menu {
+    display: flex;
+    gap: 40px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.header__link {
+    font-size: 16px;
+    color: #007469;
+    text-decoration: none;
+}
+
+.header__link:hover {
+    opacity: 0.7;
+}
+
+.header__link:active {
+    opacity: 0.5;
+}
+
+/* Active */
+.active {
+    padding: 0 4px 2px;
+    color: #fff;
+    background-color: #007469;
+}
+
+/* Hero section */
+.hero-section {
+    padding: 162px 136px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/hero-section-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-section__text {
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 24px;
+}
+
+.hero-section__text:last-of-type {
+    margin-bottom: 0;
+}
+
+.hero-section__title {
+    font-size: 44px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 36px;
+}
+/* Trainings section */
+.trainings-section {
+    background-image: url("../images/trainings-section-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.trainings-section__title {
+    font-size: 48px;
+    text-align: center;
+    color: #fff;
+    background-color: #007469;
+    padding: 28px 0;
+    margin-left: -100vw;
+    margin-right: -100vw;
+    left: 50%;
+    right: 50%;
+    margin-bottom: 0;
+}
+
+.trainings-section__container {
+    padding: 70px 0 200px;
+}
+
+.trainings-section__subtitle {
+    font-size: 36px;
+    text-align: center;
+    color: #000;
+    margin-bottom: 70px;
+}
+
+.trainings-section__text {
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    background: rgba(123, 130, 127, 0.96);
+    border-radius: 40px;
+    width: 568px;
+    padding: 14px 18px;
+    margin: 0 auto;
+    margin-bottom: 42px;
+}
+
+.trainings-section__text:last-of-type {
+    margin-bottom: 0;
+}
+
+/* Directions section */
+.directions-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/directions-section-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.directions-section__container {
+    padding-top: 92px;
+    padding-bottom: 190px;
+}
+
+.directions-section__title {
+    font-size: 28px;
+    text-align: center;
+    color: #fff;
+    width: 478px;
+    margin-bottom: 62px;
+    position: relative;
+    z-index: 0;
+}
+
+.directions-section__title::before {
+    position: absolute;
+    content: '';
+    width: 518px;
+    height: 78px;
+    top: 0;
+    left: 0;
+    border-radius: 100%;
+    background: #007469;
+    filter: blur(50px);
+    z-index: -1;
+}
+
+.directions-section__card {
+    padding: 18px 32px;
+    border-radius: 41px;
+    background: #d9d9d9;
+    width: 524px;
+}
+
+.directions-section__card-title {
+    font-size: 16px;
+    color: #007469;
+    margin-bottom: 0;
+}
+
+.directions-section__text {
+    font-size: 13px;
+    color: #000;
+    width: 492px;
+    margin-bottom: 12px;
+}
+
+/* Register section */
+.register-section {
+    background-color: #e7e7e7;
+}
+
+.register-section__title {
+    font-size: 48px;
+    text-align: center;
+    color: #fff;
+    background-color: #007469;
+    padding: 28px 0;
+    margin-left: -100vw;
+    margin-right: -100vw;
+    left: 50%;
+    right: 50%;
+    margin-bottom: 0;
+}
+
+.register-section__container {
+    padding: 96px 0;
+}
+
+.register-section__link {
+    font-size: 36px;
+    text-align: center;
+    color: #000;
+    display: block;
+    text-decoration: none;
+}
+
+/* Provided section */
+.provided-section {
+    background: linear-gradient(180deg, #fff 0%, #cbcbcb 46%, rgba(115, 115, 115, 0.96) 100%);
+}
+
+.provided-section__container {
+    padding-top: 72px;
+    padding-bottom: 98px;
+}
+
+.provided-section__title {
+    font-size: 36px;
+    text-align: center;
+    color: #007469;
+    padding: 18px 30px;
+    border: 1px solid #007469;
+    border-radius: 60px;
+    width: 675px;
+    margin: 0 auto;
+    margin-bottom: 106px;
+}
+
+.provided-section__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 72px;
+    justify-items: center;
+}
+
+.provided-section__list li:last-child {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.provided-section__link {
+    font-size: 36px;
+    color: #000;
+    margin-bottom: 0;
+    text-decoration: none;
+}
+
+/* Contact section */
+.contact-section {}
+
+.contact-section__title {
+    font-size: 48px;
+    text-align: center;
+    color: #fff;
+    background-color: #007469;
+    padding: 28px 0;
+    margin-left: -100vw;
+    margin-right: -100vw;
+    left: 50%;
+    right: 50%;
+    margin-bottom: 0;
+}
+
+.contact-section__container {
+    padding: 20px 0;
+}
+
+.contact-section__text {
+    font-size: 15px;
+    color: #000;
+    margin-bottom: 16px;
+}
+
+.contact-section__address-container {
+    margin-bottom: 16px;
+}
+
+.contact-section__address-text-container {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.contact-section__address-link {
+    font-size: 15px;
+    color: #000;
+    text-decoration: none;
+}
+
+.contact-section__address-text {
+    font-size: 15px;
+    color: #000;
+    margin-bottom: 0;
+}
+
+/* Footer */
+.footer {
+    padding: 24px 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/footer-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.footer__text {
+    font-size: 10px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+/* Information section */
+.information-section {
+    padding-top: 140px;
+    padding-bottom: 120px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/hero-section-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.information-section__title {
+    font-size: 44px;
+    text-align: center;
+    color: #fff;
+    width: 572px;
+    margin: 0 auto;
+}
+
+/* Strip section */
+.strip-section {
+    padding: 34px 0;
+    border: 1px solid #007469;
+    background-color: #007469;
+    margin-left: -100vw;
+    margin-right: -100vw;
+    left: 50%;
+    right: 50%;
+}
+
+.strip-section__text {
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.strip-section__title {
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+/* Conditions section */
+.conditions-section {
+    padding: 68px 0;
+}
+
+.conditions-section__title {
+    font-style: italic;
+    font-size: 32px;
+    color: #000;
+    margin-bottom: 38px;
+}
+
+.conditions-section__text {
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 0;
+    width: 600px;
+    margin-bottom: 0;
+}
+
+.conditions-section__text:nth-of-type(2) {
+    margin-bottom: 30px;
+}
+
+.conditions-section__link {
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 0;
+}
+
+.conditions-section__link:last-of-type {
+    margin-bottom: 30px;
+}
+
+.conditions-section__table {
+    border-collapse: collapse;
+    width: 854px;
+    margin-bottom: 60px;
+}
+
+.conditions-section__table-title {
+    border: 2px solid black;
+    padding: 6px 8px;
+    font-size: 20px;
+    color: #000;
+}
+
+.conditions-section__table-text {
+    border: 2px solid black;
+    padding: 6px 8px;
+    font-size: 20px;
+    color: #000;
+}
+
+.conditions-section__table-text:last-of-type {
+    text-align: center;
+}
+
+/* Requirements section */
+.requirements-section {
+    padding-top: 140px;
+    padding-bottom: 134px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/hero-section-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.requirements-section__title {
+    font-size: 44px;
+    text-align: center;
+    color: #fff;
+}
+
+/* Strip two section */
+.strip-two-section {
+    padding: 16px 0;
+    border: 1px solid #007469;
+    background-color: #007469;
+    margin-left: -100vw;
+    margin-right: -100vw;
+    left: 50%;
+    right: 50%;
+}
+
+.strip-two-section__title {
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 18px;
+}
+
+.strip-two-section__text {
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+/* Formatting-section */
+
+.formatting-section {
+    padding: 72px 0;
+}
+
+.formatting-section__title {
+    font-size: 24px;
+    text-align: center;
+    color: #000;
+    margin-bottom: 68px;
+}
+
+.formatting-section__text {
+    font-size: 24px;
+    text-align: center;
+    color: #000;
+    width: 990px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.formatting-section__text:last-of-type {
+    margin-bottom: 0;
+}
+
+.formatting-section__text:nth-of-type(2) {
+    margin-bottom: 100px;
+}
+
+.formatting-section__sample-title {
+    font-size: 24px;
+    text-align: center;
+    color: #000;
+    margin-bottom: 32px;
+}
+
+.formatting-section__sample-text {
+    font-size: 16px;
+    text-align: center;
+    color: #000;
+    margin: 0 auto;
+}
+
+.formatting-section__sample-text:last-of-type {
+    margin-bottom: 30px;
+}
+
+.formatting-section__annotation-text {
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 0;
+}
+
+.formatting-section__annotation-text:nth-of-type(2) {
+    margin-bottom: 16px;
+}
+
+.formatting-section__annotation-text:last-of-type {
+    margin-bottom: 16px;
+}
+
+.formatting-section__thesis-text {
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+.formatting-section__source-text {
+    font-size: 16px;
+    text-align: center;
+    color: #000;
+    margin: 0 auto;
+    width: 220px;
+}
